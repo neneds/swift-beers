@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09244778EF0D1AACF7EFB017 /* Pods_swift_beersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DE4F0B9606B5E77398E470 /* Pods_swift_beersUITests.framework */; };
+		601F9C1371A98436E6420F62 /* Pods_swift_beersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8DB809B60DC6A23BA9212E /* Pods_swift_beersTests.framework */; };
+		C54603DA383941045E9D7C28 /* Pods_swift_beers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86ADBA66FC86033E7F4A784 /* Pods_swift_beers.framework */; };
 		E66C582622AF22CC000D465D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C582522AF22CC000D465D /* AppDelegate.swift */; };
 		E66C582822AF22CC000D465D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C582722AF22CC000D465D /* SceneDelegate.swift */; };
 		E66C582A22AF22CC000D465D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C582922AF22CC000D465D /* ContentView.swift */; };
@@ -15,6 +18,23 @@
 		E66C583222AF22CE000D465D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66C583022AF22CE000D465D /* LaunchScreen.storyboard */; };
 		E66C583D22AF22CE000D465D /* swift_beersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C583C22AF22CE000D465D /* swift_beersTests.swift */; };
 		E66C584822AF22CE000D465D /* swift_beersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C584722AF22CE000D465D /* swift_beersUITests.swift */; };
+		E66C585A22AF230A000D465D /* BeerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C585922AF230A000D465D /* BeerProvider.swift */; };
+		E66C585D22AF231E000D465D /* BeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C585C22AF231E000D465D /* BeerService.swift */; };
+		E66C586222AF2340000D465D /* BaseLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C585F22AF2340000D465D /* BaseLocalizable.swift */; };
+		E66C586322AF2340000D465D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C586022AF2340000D465D /* BaseViewModel.swift */; };
+		E66C586422AF2340000D465D /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C586122AF2340000D465D /* BaseNetworkService.swift */; };
+		E66C586A22AF235F000D465D /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C586722AF235F000D465D /* CustomError.swift */; };
+		E66C586B22AF235F000D465D /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C586822AF235F000D465D /* NetworkServiceError.swift */; };
+		E66C586C22AF235F000D465D /* CustomError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C586922AF235F000D465D /* CustomError+Extensions.swift */; };
+		E66C586F22AF237F000D465D /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C586E22AF237F000D465D /* Bundle+Extensions.swift */; };
+		E66C587422AF2391000D465D /* NetworOperationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C587122AF2390000D465D /* NetworOperationMode.swift */; };
+		E66C587522AF2391000D465D /* StubResponseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C587222AF2390000D465D /* StubResponseManager.swift */; };
+		E66C587622AF2391000D465D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C587322AF2391000D465D /* NetworkManager.swift */; };
+		E66C587922AF23A8000D465D /* ProjectUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C587822AF23A8000D465D /* ProjectUtils.swift */; };
+		E66C587C22AF23BF000D465D /* BeerResponseElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C587B22AF23BF000D465D /* BeerResponseElement.swift */; };
+		E66C588222AF23E7000D465D /* EnvironmentVariablesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C587F22AF23E7000D465D /* EnvironmentVariablesLoader.swift */; };
+		E66C588322AF23E7000D465D /* Variables.plist in Resources */ = {isa = PBXBuildFile; fileRef = E66C588022AF23E7000D465D /* Variables.plist */; };
+		E66C588422AF23E7000D465D /* EnvironmentVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C588122AF23E7000D465D /* EnvironmentVariables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +55,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C8DB809B60DC6A23BA9212E /* Pods_swift_beersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_beersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DE4F0B9606B5E77398E470 /* Pods_swift_beersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_beersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		566BED255B2CD9053A222451 /* Pods-swift-beersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-beersTests.release.xcconfig"; path = "Target Support Files/Pods-swift-beersTests/Pods-swift-beersTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B5E89079546DA001609359A /* Pods-swift-beersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-beersUITests.release.xcconfig"; path = "Target Support Files/Pods-swift-beersUITests/Pods-swift-beersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5DCB8F02D0DC0B48EE311515 /* Pods-swift-beers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-beers.debug.xcconfig"; path = "Target Support Files/Pods-swift-beers/Pods-swift-beers.debug.xcconfig"; sourceTree = "<group>"; };
+		6F58C1A3435BCC32CAB6F7B1 /* Pods-swift-beersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-beersTests.debug.xcconfig"; path = "Target Support Files/Pods-swift-beersTests/Pods-swift-beersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FFA83AACD75A3130DC9866A /* Pods-swift-beers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-beers.release.xcconfig"; path = "Target Support Files/Pods-swift-beers/Pods-swift-beers.release.xcconfig"; sourceTree = "<group>"; };
+		C11AE2393CC0D1785BDF15CD /* Pods-swift-beersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-beersUITests.debug.xcconfig"; path = "Target Support Files/Pods-swift-beersUITests/Pods-swift-beersUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E66C582222AF22CC000D465D /* swift-beers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-beers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66C582522AF22CC000D465D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E66C582722AF22CC000D465D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +77,24 @@
 		E66C584322AF22CE000D465D /* swift-beersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-beersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66C584722AF22CE000D465D /* swift_beersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_beersUITests.swift; sourceTree = "<group>"; };
 		E66C584922AF22CE000D465D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E66C585922AF230A000D465D /* BeerProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerProvider.swift; sourceTree = "<group>"; };
+		E66C585C22AF231E000D465D /* BeerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerService.swift; sourceTree = "<group>"; };
+		E66C585F22AF2340000D465D /* BaseLocalizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLocalizable.swift; sourceTree = "<group>"; };
+		E66C586022AF2340000D465D /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		E66C586122AF2340000D465D /* BaseNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkService.swift; sourceTree = "<group>"; };
+		E66C586722AF235F000D465D /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		E66C586822AF235F000D465D /* NetworkServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
+		E66C586922AF235F000D465D /* CustomError+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomError+Extensions.swift"; sourceTree = "<group>"; };
+		E66C586E22AF237F000D465D /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		E66C587122AF2390000D465D /* NetworOperationMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworOperationMode.swift; sourceTree = "<group>"; };
+		E66C587222AF2390000D465D /* StubResponseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubResponseManager.swift; sourceTree = "<group>"; };
+		E66C587322AF2391000D465D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E66C587822AF23A8000D465D /* ProjectUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectUtils.swift; sourceTree = "<group>"; };
+		E66C587B22AF23BF000D465D /* BeerResponseElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerResponseElement.swift; sourceTree = "<group>"; };
+		E66C587F22AF23E7000D465D /* EnvironmentVariablesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentVariablesLoader.swift; sourceTree = "<group>"; };
+		E66C588022AF23E7000D465D /* Variables.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Variables.plist; sourceTree = "<group>"; };
+		E66C588122AF23E7000D465D /* EnvironmentVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentVariables.swift; sourceTree = "<group>"; };
+		F86ADBA66FC86033E7F4A784 /* Pods_swift_beers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_beers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C54603DA383941045E9D7C28 /* Pods_swift_beers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601F9C1371A98436E6420F62 /* Pods_swift_beersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +118,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09244778EF0D1AACF7EFB017 /* Pods_swift_beersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1A7293966A7D517116628AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F86ADBA66FC86033E7F4A784 /* Pods_swift_beers.framework */,
+				4C8DB809B60DC6A23BA9212E /* Pods_swift_beersTests.framework */,
+				51DE4F0B9606B5E77398E470 /* Pods_swift_beersUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD314A01BB2844A99A831A2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DCB8F02D0DC0B48EE311515 /* Pods-swift-beers.debug.xcconfig */,
+				8FFA83AACD75A3130DC9866A /* Pods-swift-beers.release.xcconfig */,
+				6F58C1A3435BCC32CAB6F7B1 /* Pods-swift-beersTests.debug.xcconfig */,
+				566BED255B2CD9053A222451 /* Pods-swift-beersTests.release.xcconfig */,
+				C11AE2393CC0D1785BDF15CD /* Pods-swift-beersUITests.debug.xcconfig */,
+				5B5E89079546DA001609359A /* Pods-swift-beersUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E66C581922AF22CC000D465D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +156,8 @@
 				E66C583B22AF22CE000D465D /* swift-beersTests */,
 				E66C584622AF22CE000D465D /* swift-beersUITests */,
 				E66C582322AF22CC000D465D /* Products */,
+				BD314A01BB2844A99A831A2F /* Pods */,
+				B1A7293966A7D517116628AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +174,8 @@
 		E66C582422AF22CC000D465D /* swift-beers */ = {
 			isa = PBXGroup;
 			children = (
+				E66C585622AF22DD000D465D /* Sources */,
+				E66C585522AF22D5000D465D /* Resources */,
 				E66C582522AF22CC000D465D /* AppDelegate.swift */,
 				E66C582722AF22CC000D465D /* SceneDelegate.swift */,
 				E66C582922AF22CC000D465D /* ContentView.swift */,
@@ -136,6 +213,133 @@
 			path = "swift-beersUITests";
 			sourceTree = "<group>";
 		};
+		E66C585522AF22D5000D465D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E66C585622AF22DD000D465D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E66C587D22AF23D1000D465D /* SupportFiles */,
+				E66C587A22AF23B5000D465D /* Model */,
+				E66C586522AF234C000D465D /* Helpers */,
+				E66C585E22AF232F000D465D /* BaseClasses */,
+				E66C585722AF22F9000D465D /* API */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E66C585722AF22F9000D465D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E66C585B22AF2313000D465D /* Service */,
+				E66C585822AF22FE000D465D /* Provider */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E66C585822AF22FE000D465D /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				E66C585922AF230A000D465D /* BeerProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		E66C585B22AF2313000D465D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E66C585C22AF231E000D465D /* BeerService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E66C585E22AF232F000D465D /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E66C585F22AF2340000D465D /* BaseLocalizable.swift */,
+				E66C586122AF2340000D465D /* BaseNetworkService.swift */,
+				E66C586022AF2340000D465D /* BaseViewModel.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		E66C586522AF234C000D465D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E66C587722AF239D000D465D /* ProjectUtils */,
+				E66C587022AF2387000D465D /* Network */,
+				E66C586D22AF236C000D465D /* Extensions */,
+				E66C586622AF2354000D465D /* Error */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E66C586622AF2354000D465D /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				E66C586722AF235F000D465D /* CustomError.swift */,
+				E66C586922AF235F000D465D /* CustomError+Extensions.swift */,
+				E66C586822AF235F000D465D /* NetworkServiceError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		E66C586D22AF236C000D465D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E66C586E22AF237F000D465D /* Bundle+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E66C587022AF2387000D465D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E66C587322AF2391000D465D /* NetworkManager.swift */,
+				E66C587122AF2390000D465D /* NetworOperationMode.swift */,
+				E66C587222AF2390000D465D /* StubResponseManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E66C587722AF239D000D465D /* ProjectUtils */ = {
+			isa = PBXGroup;
+			children = (
+				E66C587822AF23A8000D465D /* ProjectUtils.swift */,
+			);
+			path = ProjectUtils;
+			sourceTree = "<group>";
+		};
+		E66C587A22AF23B5000D465D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E66C587B22AF23BF000D465D /* BeerResponseElement.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E66C587D22AF23D1000D465D /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E66C587E22AF23DD000D465D /* EnvVars */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		E66C587E22AF23DD000D465D /* EnvVars */ = {
+			isa = PBXGroup;
+			children = (
+				E66C588122AF23E7000D465D /* EnvironmentVariables.swift */,
+				E66C587F22AF23E7000D465D /* EnvironmentVariablesLoader.swift */,
+				E66C588022AF23E7000D465D /* Variables.plist */,
+			);
+			path = EnvVars;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +347,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E66C584C22AF22CE000D465D /* Build configuration list for PBXNativeTarget "swift-beers" */;
 			buildPhases = (
+				E2E2B5A985AD46E4A1D56F4C /* [CP] Check Pods Manifest.lock */,
 				E66C581E22AF22CC000D465D /* Sources */,
 				E66C581F22AF22CC000D465D /* Frameworks */,
 				E66C582022AF22CC000D465D /* Resources */,
+				C2303F14E970369DF5A5524A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +366,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E66C584F22AF22CE000D465D /* Build configuration list for PBXNativeTarget "swift-beersTests" */;
 			buildPhases = (
+				EBC28BFC3AF0F67BD5B79BE0 /* [CP] Check Pods Manifest.lock */,
 				E66C583422AF22CE000D465D /* Sources */,
 				E66C583522AF22CE000D465D /* Frameworks */,
 				E66C583622AF22CE000D465D /* Resources */,
@@ -178,6 +385,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E66C585222AF22CE000D465D /* Build configuration list for PBXNativeTarget "swift-beersUITests" */;
 			buildPhases = (
+				7E7805B80E255F9F51589A74 /* [CP] Check Pods Manifest.lock */,
 				E66C583F22AF22CE000D465D /* Sources */,
 				E66C584022AF22CE000D465D /* Frameworks */,
 				E66C584122AF22CE000D465D /* Resources */,
@@ -242,6 +450,7 @@
 			files = (
 				E66C583222AF22CE000D465D /* LaunchScreen.storyboard in Resources */,
 				E66C582F22AF22CE000D465D /* Preview Assets.xcassets in Resources */,
+				E66C588322AF23E7000D465D /* Variables.plist in Resources */,
 				E66C582C22AF22CE000D465D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,14 +471,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E7805B80E255F9F51589A74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swift-beersUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2303F14E970369DF5A5524A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swift-beers/Pods-swift-beers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swift-beers/Pods-swift-beers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2E2B5A985AD46E4A1D56F4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swift-beers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBC28BFC3AF0F67BD5B79BE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swift-beersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E66C581E22AF22CC000D465D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E66C582622AF22CC000D465D /* AppDelegate.swift in Sources */,
+				E66C586422AF2340000D465D /* BaseNetworkService.swift in Sources */,
+				E66C586222AF2340000D465D /* BaseLocalizable.swift in Sources */,
+				E66C587C22AF23BF000D465D /* BeerResponseElement.swift in Sources */,
+				E66C586F22AF237F000D465D /* Bundle+Extensions.swift in Sources */,
+				E66C585D22AF231E000D465D /* BeerService.swift in Sources */,
+				E66C587922AF23A8000D465D /* ProjectUtils.swift in Sources */,
+				E66C586322AF2340000D465D /* BaseViewModel.swift in Sources */,
+				E66C586B22AF235F000D465D /* NetworkServiceError.swift in Sources */,
+				E66C586A22AF235F000D465D /* CustomError.swift in Sources */,
+				E66C588222AF23E7000D465D /* EnvironmentVariablesLoader.swift in Sources */,
+				E66C587422AF2391000D465D /* NetworOperationMode.swift in Sources */,
 				E66C582822AF22CC000D465D /* SceneDelegate.swift in Sources */,
+				E66C587522AF2391000D465D /* StubResponseManager.swift in Sources */,
+				E66C585A22AF230A000D465D /* BeerProvider.swift in Sources */,
+				E66C587622AF2391000D465D /* NetworkManager.swift in Sources */,
+				E66C586C22AF235F000D465D /* CustomError+Extensions.swift in Sources */,
 				E66C582A22AF22CC000D465D /* ContentView.swift in Sources */,
+				E66C588422AF23E7000D465D /* EnvironmentVariables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +754,7 @@
 		};
 		E66C584D22AF22CE000D465D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DCB8F02D0DC0B48EE311515 /* Pods-swift-beers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +775,7 @@
 		};
 		E66C584E22AF22CE000D465D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FFA83AACD75A3130DC9866A /* Pods-swift-beers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +796,7 @@
 		};
 		E66C585022AF22CE000D465D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F58C1A3435BCC32CAB6F7B1 /* Pods-swift-beersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +818,7 @@
 		};
 		E66C585122AF22CE000D465D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 566BED255B2CD9053A222451 /* Pods-swift-beersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +840,7 @@
 		};
 		E66C585322AF22CE000D465D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C11AE2393CC0D1785BDF15CD /* Pods-swift-beersUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +861,7 @@
 		};
 		E66C585422AF22CE000D465D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B5E89079546DA001609359A /* Pods-swift-beersUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
