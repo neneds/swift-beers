@@ -37,6 +37,7 @@
 		E6849B5422B07F4C007325BF /* BeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6849B5322B07F4C007325BF /* BeerCell.swift */; };
 		E6849B5822B082E2007325BF /* BeerHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6849B5722B082E2007325BF /* BeerHomeViewModel.swift */; };
 		E6AD29A522B1C4E800757DF4 /* BeerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD29A422B1C4E800757DF4 /* BeerHomeView.swift */; };
+		E6AD29A722B1D95E00757DF4 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD29A622B1D95E00757DF4 /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		E6849B5322B07F4C007325BF /* BeerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCell.swift; sourceTree = "<group>"; };
 		E6849B5722B082E2007325BF /* BeerHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerHomeViewModel.swift; sourceTree = "<group>"; };
 		E6AD29A422B1C4E800757DF4 /* BeerHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerHomeView.swift; sourceTree = "<group>"; };
+		E6AD29A622B1D95E00757DF4 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		F86ADBA66FC86033E7F4A784 /* Pods_swift_beers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_beers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -296,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				E66C586E22AF237F000D465D /* Bundle+Extensions.swift */,
+				E6AD29A622B1D95E00757DF4 /* ImageLoader.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -619,6 +622,7 @@
 				E66C587922AF23A8000D465D /* ProjectUtils.swift in Sources */,
 				E66C586322AF2340000D465D /* BaseViewModel.swift in Sources */,
 				E6849B5422B07F4C007325BF /* BeerCell.swift in Sources */,
+				E6AD29A722B1D95E00757DF4 /* ImageLoader.swift in Sources */,
 				E66C586B22AF235F000D465D /* NetworkServiceError.swift in Sources */,
 				E66C586A22AF235F000D465D /* CustomError.swift in Sources */,
 				E66C588222AF23E7000D465D /* EnvironmentVariablesLoader.swift in Sources */,
