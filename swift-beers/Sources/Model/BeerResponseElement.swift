@@ -6,15 +6,16 @@
 //  Copyright © 2019 Dennis Merli. All rights reserved.
 
 import Foundation
+import SwiftUI
 
 // MARK: - BeerResponseElement
-class BeerResponseElement: Codable {
+class BeerResponseElement: Codable, Identifiable {
     let id: Int?
     let name, tagline, firstBrewed, beerResponseDescription: String?
     let imageURL: String?
     let abv: Double?
     let ibu: Double?
-    let targetFg, targetOg: Int?
+    let targetFg, targetOg: Double?
     let ebc, srm, ph: Double?
     let attenuationLevel: Double?
     let volume, boilVolume: BoilVolume?
@@ -22,7 +23,13 @@ class BeerResponseElement: Codable {
     let ingredients: Ingredients?
     let foodPairing: [String]?
     let brewersTips: String?
-    let contributedBy: ContributedBy?
+    
+    var beerImageURL: URL? {
+        guard let imageURL = self.imageURL else {
+           return nil
+        }
+        return URL(string: imageURL)
+    }
     
     enum CodingKeys: String, CodingKey {
         case id, name, tagline
@@ -39,10 +46,9 @@ class BeerResponseElement: Codable {
         case method, ingredients
         case foodPairing = "food_pairing"
         case brewersTips = "brewers_tips"
-        case contributedBy = "contributed_by"
     }
     
-    init(id: Int?, name: String?, tagline: String?, firstBrewed: String?, beerResponseDescription: String?, imageURL: String?, abv: Double?, ibu: Double?, targetFg: Int?, targetOg: Int?, ebc: Double?, srm: Double?, ph: Double?, attenuationLevel: Double?, volume: BoilVolume?, boilVolume: BoilVolume?, method: Method?, ingredients: Ingredients?, foodPairing: [String]?, brewersTips: String?, contributedBy: ContributedBy?) {
+    init(id: Int?, name: String?, tagline: String?, firstBrewed: String?, beerResponseDescription: String?, imageURL: String?, abv: Double?, ibu: Double?, targetFg: Double?, targetOg: Double?, ebc: Double?, srm: Double?, ph: Double?, attenuationLevel: Double?, volume: BoilVolume?, boilVolume: BoilVolume?, method: Method?, ingredients: Ingredients?, foodPairing: [String]?, brewersTips: String?) {
         self.id = id
         self.name = name
         self.tagline = tagline
@@ -63,7 +69,6 @@ class BeerResponseElement: Codable {
         self.ingredients = ingredients
         self.foodPairing = foodPairing
         self.brewersTips = brewersTips
-        self.contributedBy = contributedBy
     }
 }
 
@@ -83,10 +88,6 @@ enum Unit: String, Codable {
     case grams = "grams"
     case kilograms = "kilograms"
     case litres = "litres"
-}
-
-enum ContributedBy: String, Codable {
-    case samMasonSamjbmason = "Sam Mason <samjbmason>"
 }
 
 // MARK: - Ingredients

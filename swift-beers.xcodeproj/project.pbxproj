@@ -12,7 +12,6 @@
 		C54603DA383941045E9D7C28 /* Pods_swift_beers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86ADBA66FC86033E7F4A784 /* Pods_swift_beers.framework */; };
 		E66C582622AF22CC000D465D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C582522AF22CC000D465D /* AppDelegate.swift */; };
 		E66C582822AF22CC000D465D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C582722AF22CC000D465D /* SceneDelegate.swift */; };
-		E66C582A22AF22CC000D465D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C582922AF22CC000D465D /* ContentView.swift */; };
 		E66C582C22AF22CE000D465D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66C582B22AF22CE000D465D /* Assets.xcassets */; };
 		E66C582F22AF22CE000D465D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66C582E22AF22CE000D465D /* Preview Assets.xcassets */; };
 		E66C583222AF22CE000D465D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66C583022AF22CE000D465D /* LaunchScreen.storyboard */; };
@@ -35,6 +34,9 @@
 		E66C588222AF23E7000D465D /* EnvironmentVariablesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C587F22AF23E7000D465D /* EnvironmentVariablesLoader.swift */; };
 		E66C588322AF23E7000D465D /* Variables.plist in Resources */ = {isa = PBXBuildFile; fileRef = E66C588022AF23E7000D465D /* Variables.plist */; };
 		E66C588422AF23E7000D465D /* EnvironmentVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C588122AF23E7000D465D /* EnvironmentVariables.swift */; };
+		E6849B5422B07F4C007325BF /* BeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6849B5322B07F4C007325BF /* BeerCell.swift */; };
+		E6849B5822B082E2007325BF /* BeerHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6849B5722B082E2007325BF /* BeerHomeViewModel.swift */; };
+		E6AD29A522B1C4E800757DF4 /* BeerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD29A422B1C4E800757DF4 /* BeerHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +68,6 @@
 		E66C582222AF22CC000D465D /* swift-beers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-beers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66C582522AF22CC000D465D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E66C582722AF22CC000D465D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E66C582922AF22CC000D465D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E66C582B22AF22CE000D465D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E66C582E22AF22CE000D465D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E66C583122AF22CE000D465D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,6 +95,9 @@
 		E66C587F22AF23E7000D465D /* EnvironmentVariablesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentVariablesLoader.swift; sourceTree = "<group>"; };
 		E66C588022AF23E7000D465D /* Variables.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Variables.plist; sourceTree = "<group>"; };
 		E66C588122AF23E7000D465D /* EnvironmentVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentVariables.swift; sourceTree = "<group>"; };
+		E6849B5322B07F4C007325BF /* BeerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCell.swift; sourceTree = "<group>"; };
+		E6849B5722B082E2007325BF /* BeerHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerHomeViewModel.swift; sourceTree = "<group>"; };
+		E6AD29A422B1C4E800757DF4 /* BeerHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerHomeView.swift; sourceTree = "<group>"; };
 		F86ADBA66FC86033E7F4A784 /* Pods_swift_beers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_beers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -145,7 +149,6 @@
 				C11AE2393CC0D1785BDF15CD /* Pods-swift-beersUITests.debug.xcconfig */,
 				5B5E89079546DA001609359A /* Pods-swift-beersUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -178,7 +181,6 @@
 				E66C585522AF22D5000D465D /* Resources */,
 				E66C582522AF22CC000D465D /* AppDelegate.swift */,
 				E66C582722AF22CC000D465D /* SceneDelegate.swift */,
-				E66C582922AF22CC000D465D /* ContentView.swift */,
 				E66C582B22AF22CE000D465D /* Assets.xcassets */,
 				E66C583022AF22CE000D465D /* LaunchScreen.storyboard */,
 				E66C583322AF22CE000D465D /* Info.plist */,
@@ -216,6 +218,7 @@
 		E66C585522AF22D5000D465D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E6849B5222B07F2F007325BF /* Views */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 		E66C585622AF22DD000D465D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E6849B5522B082CA007325BF /* Flows */,
 				E66C587D22AF23D1000D465D /* SupportFiles */,
 				E66C587A22AF23B5000D465D /* Model */,
 				E66C586522AF234C000D465D /* Helpers */,
@@ -338,6 +342,39 @@
 				E66C588022AF23E7000D465D /* Variables.plist */,
 			);
 			path = EnvVars;
+			sourceTree = "<group>";
+		};
+		E6849B5222B07F2F007325BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6849B5322B07F4C007325BF /* BeerCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6849B5522B082CA007325BF /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD29A322B1C4D700757DF4 /* View */,
+				E6849B5622B082D4007325BF /* ViewModel */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		E6849B5622B082D4007325BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E6849B5722B082E2007325BF /* BeerHomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E6AD29A322B1C4D700757DF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD29A422B1C4E800757DF4 /* BeerHomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,16 +618,18 @@
 				E66C585D22AF231E000D465D /* BeerService.swift in Sources */,
 				E66C587922AF23A8000D465D /* ProjectUtils.swift in Sources */,
 				E66C586322AF2340000D465D /* BaseViewModel.swift in Sources */,
+				E6849B5422B07F4C007325BF /* BeerCell.swift in Sources */,
 				E66C586B22AF235F000D465D /* NetworkServiceError.swift in Sources */,
 				E66C586A22AF235F000D465D /* CustomError.swift in Sources */,
 				E66C588222AF23E7000D465D /* EnvironmentVariablesLoader.swift in Sources */,
 				E66C587422AF2391000D465D /* NetworOperationMode.swift in Sources */,
+				E6849B5822B082E2007325BF /* BeerHomeViewModel.swift in Sources */,
 				E66C582822AF22CC000D465D /* SceneDelegate.swift in Sources */,
 				E66C587522AF2391000D465D /* StubResponseManager.swift in Sources */,
 				E66C585A22AF230A000D465D /* BeerProvider.swift in Sources */,
 				E66C587622AF2391000D465D /* NetworkManager.swift in Sources */,
 				E66C586C22AF235F000D465D /* CustomError+Extensions.swift in Sources */,
-				E66C582A22AF22CC000D465D /* ContentView.swift in Sources */,
+				E6AD29A522B1C4E800757DF4 /* BeerHomeView.swift in Sources */,
 				E66C588422AF23E7000D465D /* EnvironmentVariables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
